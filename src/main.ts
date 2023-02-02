@@ -1,7 +1,6 @@
 import QRCode from "qrcode";
 import { Wechaty }  from 'wechaty';
 import { ChatGPTBot } from "./chatgpt.js";
-export WECHATY_PUPPET = wechaty-puppet-wechat;
 // Wechaty instance
 const name = "wechat-puppet-wechat";
 const weChatBot = new Wechaty({
