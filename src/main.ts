@@ -1,16 +1,12 @@
 import QRCode from "qrcode";
-import { WechatyBuilder } from "wechaty";
+const { Wechaty } = require("wechaty");
 import { ChatGPTBot } from "./chatgpt.js";
 
 // Wechaty instance
-const weChatBot = WechatyBuilder.build({
-  name: "my-wechat-bot",
-  puppetOptions: {
-    uos: true, // 开启uos协议
-  },
-  puppet: "wechaty-puppet-wechat",
+const name = "wechat-puppet-wechat";
+const weChatBot = new Wechaty({
+  name, // generate xxxx.memory-card.json and save login data for the next login
 });
-// ChatGPTBot instance
 const chatGPTBot = new ChatGPTBot();
 
 async function main() {
