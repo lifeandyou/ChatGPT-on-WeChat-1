@@ -3,7 +3,7 @@ import { Wechaty }  from 'wechaty';
 import { ChatGPTBot } from "./chatgpt.js";
 // Wechaty instance
 const name = "wechat-puppet-wechat";
-const weChatBot = new Wechaty({
+let weChatBot = new Wechaty({
   name, // generate xxxx.memory-card.json and save login data for the next login
 });
 const chatGPTBot = new ChatGPTBot();
