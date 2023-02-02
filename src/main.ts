@@ -3,7 +3,7 @@ import { Wechaty } from "wechaty";
 import { ChatGPTBot } from "./chatgpt.js";
 
 // Wechaty instance
-const name = "my-wechat-bot";
+const name = "wechat-puppet-wechat";
 let weChatBot = new Wechaty({
   name
 });
