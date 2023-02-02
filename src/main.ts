@@ -1,5 +1,5 @@
 import QRCode from "qrcode";
-const { Wechaty } = require("wechaty");
+import { Wechaty } from "wechaty";
 import { ChatGPTBot } from "./chatgpt.js";
 
 // Wechaty instance
