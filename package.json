@@ -33,4 +33,5 @@
     "exec": "node --loader ts-node/esm src/main.ts",
     "delay": 500
   },
+  "type": "commonjs"
 }
