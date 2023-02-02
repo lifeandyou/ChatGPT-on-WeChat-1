@@ -4,7 +4,7 @@ import { ChatGPTBot } from "./chatgpt.js";
 
 // Wechaty instance
 const name = "wechat-puppet-wechat";
-let weChatBot = new Wechaty({
+let weChatBot = Wechaty.build({
   name
 });
 // ChatGPTBot instance
