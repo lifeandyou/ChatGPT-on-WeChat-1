@@ -1,11 +1,14 @@
 import QRCode from "qrcode";
-import { Wechaty } from "wechaty";
+import { WechatyBuilder } from "wechaty";
 import { ChatGPTBot } from "./chatgpt.js";
 
 // Wechaty instance
-const name = "wechat-puppet-wechat";
-const weChatBot = Wechaty.build({
-  name
+const weChatBot = WechatyBuilder.build({
+  name: "my-wechat-bot",
+  puppetOptions: {
+    uos: true, // 开启uos协议
+  },
+  puppet: "wechaty-puppet-wechat",
 });
 // ChatGPTBot instance
 const chatGPTBot = new ChatGPTBot();
